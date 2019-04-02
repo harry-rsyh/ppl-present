@@ -38,7 +38,7 @@
 
         <!-- Quotes -->
         <div class="form-group row">
-            <label for="note" class="col-sm-5 col-form-label">note<p class="d-inline" style="font-size: 7pt;color:red;"><i>( Max 35 Character )</i></p></label>
+            <label for="note" class="col-sm-5 col-form-label">note</label>
             <div class="col-sm-7">
                 <input type="text" class="form-control" id="note" name="note" >
             </div>
