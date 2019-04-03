@@ -10,7 +10,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Dashboard</title>
+  <title>MSG - Dashboard</title>
+  <link rel="icon" type="logo/png" href="img/logo1.png" />
 
   <!-- Custom fonts for this template-->
   <link href="{{ asset('srcFront/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
@@ -167,8 +168,8 @@
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                    <div class="small text-gray-500">April 04, 2019</div>
+                    <span class="font-weight-bold">Masih dalam proses!</span>
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -178,8 +179,8 @@
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    $290.29 has been deposited into your account!
+                    <div class="small text-gray-500">April 01, 2019</div>
+                    Rp.500K Anggaran yang diperlukan!
                   </div>
                 </a>
                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -189,8 +190,8 @@
                     </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Spending Alert: We've noticed unusually high spending for your account.
+                    <div class="small text-gray-500">Maret 31, 2019</div>
+                    Pembuatan Slide Presentasi
                   </div>
                 </a>
                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
