@@ -21,6 +21,10 @@
   <!-- Custom styles for this template-->
   <link href="{{ asset('srcFront/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
+  
+  <!-- Custom styles for this page -->
+  <link href="{{ asset('srcFront/vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
+
   <!-- ======== additional template ======== -->
   <!-- template Emo -->
   <link href="{{ asset('vendor/templatemo/css/templatemo-style.css') }}" rel="stylesheet">
@@ -344,11 +348,11 @@
   <script src="{{ asset('srcFront/js/sb-admin-2.min.js')}}"></script>
 
   <!-- Page level plugins -->
-  <script src="{{ asset('srcFront/vendor/chart/Chart.min.js')}}"></script>
+  <script src="{{ asset('srcFront/vendor/datatables/jquery.dataTables.min.js')}}"></script>
+  <script src="{{ asset('srcFront/vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
 
   <!-- Page level custom scripts -->
-  <script src="{{ asset('srcFront/js/demo/chart-area-demo.js')}}"></script>
-  <script src="{{ asset('srcFront/js/demo/chart-pie-demo.js')}}"></script>
+  <script src="{{ asset('srcFront/js/demo/datatables-demo.js')}}"></script>
   @yield('addScript')
 
 </body>
