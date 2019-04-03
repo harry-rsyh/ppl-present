@@ -302,7 +302,10 @@
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
             <span>Copyright &copy; Your Website 2019</span>
-            <a href="#">Call Now! <i class="fa fa-phone"></i> +62 821 5375 6309</a>
+            <br>
+            <br>
+            <span href="#">Call Now! <i class="fa fa-phone"></i> +62 821 5375 6309</span>
+            
           </div>
         </div>
       </footer>
@@ -329,7 +332,7 @@
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Silahkan Menuju Ke Kasir Untuk Menyelesaikan Pembayaran</div>
+        <div class="modal-body">Silahkan Menuju Ke Kasir Untuk Menyelesaikan Pembayaran!</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
           <button class="btn btn-primary" type="button" disabled>Selesai</button>
