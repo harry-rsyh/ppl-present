@@ -9,6 +9,18 @@
                         </div>                        
                     </div>
                 </div>
+        <!-- Set up your HTML -->
+                <div class="owl-carousel">
+                <img src="img/slider-image1.jpg" class="img-responsive img-fluid p-2">
+                <img src="img/slider-image2.jpg" class="img-responsive img-fluid p-2">
+                <img src="img/slider-image3.jpg" class="img-responsive img-fluid p-2">
+                    <!-- <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div> -->
+                </div>
                 
 @endsection
 
@@ -16,6 +28,7 @@
 <script>
     $(function(){
        $("#fTrending").addClass("active");
+       $(".owl-carousel").owlCarousel();
     });
 </script>
 @endsection
