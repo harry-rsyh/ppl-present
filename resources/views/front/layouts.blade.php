@@ -28,6 +28,10 @@
   <!-- ======== additional template ======== -->
   <!-- template Emo -->
   <link href="{{ asset('vendor/templatemo/css/templatemo-style.css') }}" rel="stylesheet">
+  
+  <!--OWL-->
+  <link rel="stylesheet" href="vendor/owl/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl/css/owl.theme.default.min.css">
 
 </head>
 
@@ -353,6 +357,9 @@
 
   <!-- Page level custom scripts -->
   <script src="{{ asset('srcFront/js/demo/datatables-demo.js')}}"></script>
+  
+  <!-- OWL JS -->
+  <script src="vendor/owl/js/owl.carousel.min.js"></script>
   @yield('addScript')
 
 </body>
