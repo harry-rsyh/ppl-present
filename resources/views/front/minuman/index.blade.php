@@ -3,7 +3,7 @@
 @section('content')
 <div class="row">
     
-    @include('front.makanan.add-galeri')
+    @include('front.minuman.add-galeri')
     <!-- Kotak -->
     <div class="col-lg-3 col-md-4" role="button" data-toggle="modal" data-target="#modalGaleri">
         <div class="card mb-4 py-2 border-left-primary">

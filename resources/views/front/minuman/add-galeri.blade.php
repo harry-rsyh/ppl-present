@@ -36,14 +36,16 @@
         </div>
         <!-- Label -->
 
-        <!-- Quotes -->
         <div class="form-group row">
-            <label for="note" class="col-sm-5 col-form-label">note</label>
+            <label for="opsi" class="col-sm-5 col-form-label">Opsi</label>
             <div class="col-sm-7">
-                <input type="text" class="form-control" id="note" name="note" >
+                <select class="form-control" id="opsi" name="opsi">
+                    <option value="1" >1</option>
+                    <option value="1" >2</option>
+                </select>
             </div>
         </div>
-        <!-- nama Web -->
+        <!-- Label -->
 
         <!-- upload image -->
       </div>
