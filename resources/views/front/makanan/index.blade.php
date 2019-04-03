@@ -6,7 +6,7 @@
     @include('front.makanan.add-galeri')
     <!-- Kotak -->
     <div class="col-lg-3 col-md-4" role="button" data-toggle="modal" data-target="#modalGaleri">
-        <div class="card mb-4 py-2 border-left-primary">
+        <div class="card shadow mb-4 py-2 border-left-primary">
             <img src="img/menu-image1.jpg" class="img-responsive img-fluid p-2">
             <div class="card-body">
                 <div class="menu-info">
@@ -25,7 +25,7 @@
 
     <!-- Kotak -->
     <div class="col-lg-3 col-md-4" role="button" data-toggle="modal" data-target="#modalGaleri">
-        <div class="card mb-4 py-2 border-left-primary">
+        <div class="card shadow mb-4 py-2 border-left-primary">
             <img src="img/menu-image2.jpg" class="img-responsive img-fluid p-2">
             <div class="card-body">
                 <div class="menu-info">
