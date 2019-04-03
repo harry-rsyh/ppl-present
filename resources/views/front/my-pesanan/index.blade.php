@@ -13,26 +13,26 @@
             <table class="table table-bordered" id="dataPesanan" width="100%" cellspacing="0">
             <thead>
             <tr>
-                <th>First name</th>
-                <th>Last name</th>
-                <th>Salary</th>
+                <th>Menu Pesanan</th>
+                <th>Jumlah Pesanan</th>
+                <th>Harga</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Tiger</td>
-                <td>Nixon</td>
-                <td>$320,800</td>
+                <td>Udang Kecap</td>
+                <td>1</td>
+                <td>Rp 25.000</td>
             </tr>
             <tr>
-                <td>Tiger</td>
-                <td>Nixon</td>
-                <td>$320,800</td>
+                <td>Mie Goreng</td>
+                <td>2</td>
+                <td>Rp 36.000</td>
             </tr>
             <tr>
-                <td>Tiger</td>
-                <td>Nixon</td>
-                <td>$320,800</td>
+                <td>Es Cendol</td>
+                <td>2</td>
+                <td>Rp 26.000</td>
             </tr>
         </tbody>
         <tfoot>
@@ -56,7 +56,7 @@
         "paging":   false,
         "ordering": false,
         "info":     false,
-        "dom": '<"top"i>rt<"bottom"flp><"clear">',
+        // "dom": '<"top"i>rt<"bottom"flp><"clear">',
         "footerCallback": function ( row, data, start, end, display ) {
             var api = this.api(), data;
  
@@ -86,7 +86,8 @@
  
             // Update footer
             $( api.column( 2 ).footer() ).html(
-                '$'+ total
+                // '$'+ total
+                'Rp 87.000'
             );
         }
         });
