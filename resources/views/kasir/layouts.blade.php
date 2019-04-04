@@ -44,7 +44,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('trending')}}">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('pembayaran')}}">
         <div class="sidebar-brand-icon ">
             <img src="{{ asset('img/logo1.png')}}" width="60">
         </div>
@@ -52,12 +52,17 @@
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
+      
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Order
+      </div>
 
       <!-- Nav Item - Dashboard -->
-      <li id="fTrending" class="nav-item">
-        <a class="nav-link" href="{{ route('trending')}}">
-          <i class="mdi mdi-fire" style="font-size: 1.4em"></i>
-          <span>Trending</span></a>
+      <li id="fPembayaran" class="nav-item">
+        <a class="nav-link" href="{{ route('pembayaran')}}">
+          <i class="mdi mdi-credit-card-multiple" style="font-size: 1.2em"></i>
+          <span>Pembayaran</span></a>
       </li>
 
       <!-- Divider -->
@@ -65,25 +70,13 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Our Menu
+        Today
       </div>
 
-      <li id="fMakanan" class="nav-item">
-        <a class="nav-link" href="{{ route('makanan')}}">
-          <i class="mdi mdi-silverware-variant" style="font-size: 1.2em"></i>
-          <span>Makanan</span></a>
-      </li>
-
-      <li id="fMinuman" class="nav-item">
-        <a class="nav-link" href="{{ route('minuman')}}">
-          <i class="mdi mdi-glass-cocktail" style="font-size: 1em"></i>
-          <span>Minuman</span></a>
-      </li>
-
-      <li id="fDessert" class="nav-item">
-        <a class="nav-link" href="{{ route('dessert')}}">
-          <i class="mdi mdi-cupcake" style="font-size: 1em"></i>
-          <span>Dessert</span></a>
+      <li id="fTransaksi" class="nav-item">
+        <a class="nav-link" href="{{ route('transaksi')}}">
+          <i class="fas fa-clipboard-check" style="font-size: 1.1em"></i>
+          <span>Transaksi selesai</span></a>
       </li>
 
       <!-- Divider -->
@@ -91,13 +84,13 @@
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Addons
+        Semua Transaksi
       </div>
       
-      <li id="fPesanan" class="nav-item">
-        <a class="nav-link" href="{{ route('mypesanan')}}">
-          <i class="mdi mdi-file-document-edit" style="font-size: 1.2em"></i>
-          <span>Pesanan</span></a>
+      <li id="fallTransaksi" class="nav-item">
+        <a class="nav-link" href="{{ route('allTransaksi')}}">
+          <i class="mdi mdi-playlist-check" style="font-size: 1.2em"></i>
+          <span>List Transaksi</span></a>
       </li>
 
       <!-- Divider -->
@@ -154,55 +147,6 @@
                     </div>
                   </div>
                 </form>
-              </div>
-            </li>
-
-            <!-- Nav Item - Alerts -->
-            <li class="nav-item dropdown no-arrow mx-1">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">April 04, 2019</div>
-                    <span class="font-weight-bold">Masih dalam proses!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">April 01, 2019</div>
-                    Rp.500K Anggaran yang diperlukan!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">Maret 31, 2019</div>
-                    Pembuatan Slide Presentasi
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
               </div>
             </li>
 
