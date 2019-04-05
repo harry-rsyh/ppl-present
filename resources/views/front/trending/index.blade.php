@@ -1,11 +1,17 @@
 @extends('front.layouts')
 
 @section('content')
-    <div class="owl-carousel owl-theme">
-        <img src="img/slider-image1.jpg" class="img-responsive img-fluid p-2">
-        <img src="img/slider-image2.jpg" class="img-responsive img-fluid p-2">
-        <img src="img/slider-image3.jpg" class="img-responsive img-fluid p-2">
-    </div>
+        <!-- Set up your HTML -->
+            <div class="owl-carousel">
+                <div style="background-image: url('img/slider-image1.jpg');"width="100%" height="480" ></div>
+                <img src="img/slider-image1.jpg" class="img-responsive img-fluid p-2">
+                <img src="img/slider-image2.jpg" class="img-responsive img-fluid p-2">
+                <img src="img/slider-image3.jpg" class="img-responsive img-fluid p-2">
+                <img src="img/slider-image1.jpg" class="img-responsive img-fluid p-2">
+                <img src="img/slider-image2.jpg" class="img-responsive img-fluid p-2">
+                <img src="img/slider-image3.jpg" >
+            </div>
+                
                 
 @endsection
 
@@ -18,7 +24,8 @@
         loop:true,
         margin:10,
         autoplay:true,
-        autoplayTimeout:3000,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
        });
     });
 </script>
