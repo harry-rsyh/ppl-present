@@ -16,3 +16,7 @@ Route::get('/makanan','FrontController@makanan')->name('makanan');
 Route::get('/minuman','FrontController@minuman')->name('minuman');
 Route::get('/dessert','FrontController@dessert')->name('dessert');
 Route::get('/my-pesanan','FrontController@mypesanan')->name('mypesanan');
+
+Route::get('/pembayaran','KasirController@pembayaran')->name('pembayaran');
+Route::get('/transaksi','KasirController@transaksi')->name('transaksi');
+Route::get('/transaksi-list','KasirController@allTransaksi')->name('allTransaksi');
