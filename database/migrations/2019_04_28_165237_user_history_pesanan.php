@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TableUserMinuman extends Migration
+class UserHistoryPesanan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class TableUserMinuman extends Migration
      */
     public function up()
     {
-        Schema::create('User_Minuman', function(Blueprint $table){
-            $table->increments('id_UserMinuman');    
-            $table->string('foto');
+        Schema::create('User_HistoryPesanan', function(Blueprint $table){
+            $table->increments('id_HistoryPesanan');   
+            $table->integer('id_History');    
             $table->string('menu');
-            $table->string('label');
-            $table->string('harga');      
+            $table->text('note');
+            $table->integer('status');
+            $table->integer('jumlah');
+            $table->double('total');     
             $table->timestamps();       
         });
     }
@@ -30,6 +32,6 @@ class TableUserMinuman extends Migration
      */
     public function down()
     {
-        Schema::drop('User_Makanan');
+        Schema::drop('User_HistoryPesanan');
     }
 }

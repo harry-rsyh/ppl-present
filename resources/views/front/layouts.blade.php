@@ -30,8 +30,13 @@
   <link href="{{ asset('vendor/templatemo/css/templatemo-style.css') }}" rel="stylesheet">
   
   <!--OWL-->
-  <link rel="stylesheet" href="vendor/owl/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="vendor/owl/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="{{ asset('vendor/owl/css/owl.carousel.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('vendor/owl/css/owl.theme.default.min.css')}}">
+
+  <!-- MDBootstrap PRO -->
+  <link rel="stylesheet" href="{{ asset('vendor/MDBootstrap-PRO/css/mdb.min.css')}}">
+
+  @yield('customCss')
 
 </head>
 
@@ -361,7 +366,8 @@
   <script src="{{ asset('srcFront/js/demo/datatables-demo.js')}}"></script>
   
   <!-- OWL JS -->
-  <script src="vendor/owl/js/owl.carousel.min.js"></script>
+  <script src="{{ asset('vendor/owl/js/owl.carousel.min.js')}}"></script>
+
   @yield('addScript')
 
 </body>

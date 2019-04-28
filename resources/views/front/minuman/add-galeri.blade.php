@@ -1,3 +1,8 @@
+@section('customCss')
+  <!-- MDBootstrap Spinner Css -->
+  <link rel="stylesheet" href="{{ asset('css/mdbSpinner.css')}}">
+@endsection
+
 <!-- Modal -->
 <div class="modal fade" id="modalGaleri" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -13,39 +18,27 @@
       </div>
       <div class="modal-body">
 
-        <!-- Quotes -->
-        <!-- <div class="form-group row">
-            <label for="jml" class="col-sm-5 col-form-label">Quantity <p class="d-inline" style="font-size: 7pt;color:red;"><i>( Max 35 Character )</i></p></label>
-            <div class="col-sm-7">
-                <input type="number" class="form-control" id="jml" name="jml" maxlength="35" required>
-            </div>
-        </div> -->
-        <!-- nama Web -->
-        <!-- Label -->
-        <div class="form-group row">
+        <!-- Spinner Button -->
+        <div class="form-group row" style="margin-bottom: -40px;">
             <label for="jml" class="col-sm-5 col-form-label">Jumlah</label>
             <div class="col-sm-7">
-                <select class="form-control" id="jml" name="jml">
-                    <option value="1" >1</option>
-                    <option value="1" >2</option>
-                    <option value="1" >3</option>
-                    <option value="1" >4</option>
-                    <option value="1" >5</option>
-                </select>
+                <div id="jml" class="def-number-input number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"></button>
+                    <input class="quantity" min="0" max="10" name="quantity" value="1" type="number" readonly>
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                </div>
             </div>
         </div>
-        <!-- Label -->
+        <!-- Spinner Button -->
 
+        <!-- Quotes -->
         <div class="form-group row">
-            <label for="opsi" class="col-sm-5 col-form-label">Opsi</label>
+            <label for="note" class="col-sm-5 col-form-label">note</label>
             <div class="col-sm-7">
-                <select class="form-control" id="opsi" name="opsi">
-                    <option value="1" >1</option>
-                    <option value="1" >2</option>
-                </select>
+                <input type="text" class="form-control" id="note" name="note" >
             </div>
         </div>
-        <!-- Label -->
+        <!-- nama Web -->
 
         <!-- upload image -->
       </div>
@@ -57,3 +50,8 @@
     </div>
   </div>
 </div>
+
+@section('addScript')
+  <!-- MDBootstrap PRO -->
+  <script src="{{ asset('vendor/MDBootstrap-PRO/css')}}"></script>
+@endsection

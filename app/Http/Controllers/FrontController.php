@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Model\UserMakanan;
+use App\Model\UserMinuman;
+use App\Model\UserDessert;
 
 class FrontController extends Controller
 {
@@ -11,15 +14,18 @@ class FrontController extends Controller
     }
 
     public function makanan(){
-        return view('front.makanan.index');
+        $data['Makanan'] = UserMakanan::get();
+        return view('front.makanan.index',$data);
     }
 
     public function minuman(){
-        return view('front.minuman.index');
+        $data['Minuman'] = UserMinuman::get();
+        return view('front.minuman.index',$data);
     }
 
     public function dessert(){
-        return view('front.dessert.index');
+        $data['Dessert'] = UserDessert::get();
+        return view('front.dessert.index',$data);
     }
 
     public function mypesanan(){
