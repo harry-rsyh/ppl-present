@@ -20,6 +20,8 @@ Route::get('/my-pesanan','FrontController@mypesanan')->name('mypesanan');
 Route::get('/pembayaran','KasirController@pembayaran')->name('pembayaran');
 Route::get('/transaksi','KasirController@transaksi')->name('transaksi');
 Route::get('/transaksi-list','KasirController@allTransaksi')->name('allTransaksi');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
