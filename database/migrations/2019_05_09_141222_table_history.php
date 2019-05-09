@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UserHistory extends Migration
+class TableHistory extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class UserHistory extends Migration
      */
     public function up()
     {
-        Schema::create('User_History', function(Blueprint $table){
-            $table->increments('id_History');    
-            $table->integer('id_pelanggan');
-            $table->time('login');
+        Schema::create('history', function (Blueprint $table) {
+            $table->increments('id_history');
+            $table->integer('pelanggan_id');
             $table->integer('meja');
-            $table->integer('status');
-            $table->double('total');     
-            $table->timestamps();       
+            $table->double('total', 8, 2);
+            $table->integer('konfirmasi');
+            $table->timestamps();
         });
     }
 
@@ -31,6 +30,6 @@ class UserHistory extends Migration
      */
     public function down()
     {
-        Schema::drop('User_History');
+        Schema::dropIfExists('history');
     }
 }
