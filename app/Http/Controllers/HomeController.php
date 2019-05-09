@@ -30,10 +30,13 @@ class HomeController extends Controller
     {
         if(Auth::user()->level == 2){
             return view('kasir.pembayaran.index');
-        } 
-        else{
+        }
+        else if(Auth::user()->level == 4){
             $data['Makanan'] = UserMakanan::get();
             return view('front.makanan.index',$data);
+        } 
+        else{
+            return view('home');
         }
     }
 }

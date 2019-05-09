@@ -28,5 +28,6 @@
         autoplayHoverPause:true
        });
     });
+    console.log('hellow');
 </script>
 @endsection

@@ -35,6 +35,7 @@
 
   <!-- MDBootstrap PRO -->
   <link rel="stylesheet" href="{{ asset('vendor/MDBootstrap-PRO/css/mdb.min.css')}}">
+  <link rel="stylesheet" href="{{ asset('css/mdbSpinner.css')}}">
 
   @yield('customCss')
 
