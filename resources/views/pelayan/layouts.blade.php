@@ -30,17 +30,12 @@
   <link href="{{ asset('vendor/templatemo/css/templatemo-style.css') }}" rel="stylesheet">
   
   <!--OWL-->
-  <link rel="stylesheet" href="{{ asset('vendor/owl/css/owl.carousel.min.css')}}">
-  <link rel="stylesheet" href="{{ asset('vendor/owl/css/owl.theme.default.min.css')}}">
-
-  <!-- MDBootstrap PRO -->
-  <link rel="stylesheet" href="{{ asset('vendor/MDBootstrap-PRO/css/mdb.min.css')}}">
-
-  <!-- Note CSS -->
-  <link rel="stylesheet" href="{{ asset('css/note.css')}}">
-  @yield('customCss')
+  <link rel="stylesheet" href="vendor/owl/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/owl/css/owl.theme.default.min.css">
 
 </head>
+
+
 
 <body id="page-top">
 
@@ -51,7 +46,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('trending')}}">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('pembayaran')}}">
         <div class="sidebar-brand-icon ">
             <img src="{{ asset('img/logo1.png')}}" width="60">
         </div>
@@ -59,53 +54,47 @@
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
+      
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Order
+      </div>
 
       <!-- Nav Item - Dashboard -->
-      <li id="fTrending" class="nav-item">
-        <a class="nav-link" href="{{ route('trending')}}">
-          <i class="mdi mdi-fire" style="font-size: 1.4em"></i>
-          <span>Trending</span></a>
-      </li>
+      <div id="fPelayan" class="nav-item">
+        <a class="nav-link" href="{{ route('pelayan')}}">
+          <i class="mdi mdi-credit-card-multiple" style="font-size: 1.2em"></i>
+          <span>pelayan</span></a>
+      </div>
+
+        <!-- Note CSS -->
+      <link rel="stylesheet" href="{{ asset('css/note.css')}}">
+
+
+    
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Today
+      </div>
+
+      <div id="fTransaksi" class="nav-item">
+        <a class="nav-link" href="{{ route('transaksi')}}">
+          <i class="fas fa-clipboard-check" style="font-size: 1.1em"></i>
+          <span>Transaksi selesai</span></a>
+      </div>
 
       <!-- Divider -->
       <hr class="sidebar-divider">
 
       <!-- Heading -->
       <div class="sidebar-heading">
-        Our Menu
-      </div>
-
-      <li id="fMakanan" class="nav-item">
-        <a class="nav-link" href="{{ route('makanan')}}">
-          <i class="mdi mdi-silverware-variant" style="font-size: 1.2em"></i>
-          <span>Makanan</span></a>
-      </li>
-
-      <li id="fMinuman" class="nav-item">
-        <a class="nav-link" href="{{ route('minuman')}}">
-          <i class="mdi mdi-glass-cocktail" style="font-size: 1em"></i>
-          <span>Minuman</span></a>
-      </li>
-
-      <li id="fDessert" class="nav-item">
-        <a class="nav-link" href="{{ route('dessert')}}">
-          <i class="mdi mdi-cupcake" style="font-size: 1em"></i>
-          <span>Dessert</span></a>
-      </li>
-
-      <!-- Divider -->
-      <hr class="sidebar-divider">
-
-      <!-- Heading -->
-      <div class="sidebar-heading">
-        Addons
-      </div>
+        Semua Transaksi
+       </div>
       
-      <li id="fPesanan" class="nav-item">
-        <a class="nav-link" href="{{ route('mypesanan')}}">
-          <i class="mdi mdi-file-document-edit" style="font-size: 1.2em"></i>
-          <span>Pesanan</span></a>
-      </li>
+      
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -164,55 +153,6 @@
               </div>
             </li>
 
-            <!-- Nav Item - Alerts -->
-            <li class="nav-item dropdown no-arrow mx-1 mt-5">
-              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-bell fa-fw"></i>
-                <!-- Counter - Alerts -->
-                <span class="badge badge-danger badge-counter">3+</span>
-              </a>
-              <!-- Dropdown - Alerts -->
-              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
-                  Alerts Center
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-primary">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">April 04, 2019</div>
-                    <span class="font-weight-bold">Masih dalam proses!</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-donate text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">April 01, 2019</div>
-                    Rp.500K Anggaran yang diperlukan!
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-warning">
-                      <i class="fas fa-exclamation-triangle text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">Maret 31, 2019</div>
-                    Pembuatan Slide Presentasi
-                  </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
-            </li>
-
             <!-- Nav Item - Messages -->
             <li class="nav-item dropdown no-arrow mx-1">
               <!-- Dropdown - Messages -->
@@ -267,7 +207,7 @@
             <div class="topbar-divider d-none d-sm-block"></div>
 
             <!-- Nav Item - User Information -->
-            <li class="nav-item dropdown no-arrow mt-5">
+            <div class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Profil</span>
                 <img class="img-profile rounded-circle" src="{{ asset('img/test-1.png')}}">
@@ -276,7 +216,7 @@
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="#">
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Meja
+                  Account
                 </a>
                 <div class="dropdown-divider"></div>
                 @guest
@@ -291,7 +231,7 @@
                     </a>
                 @endguest
               </div>
-            </li>
+            </div>
 
           </ul>
 
@@ -333,12 +273,11 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Pembayaran</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Selesaikan Proses Pembayaran Di Kasir!</div>
+        <div class="modal-body">Logout dari Kasir ?</div>
         <div class="modal-footer">
         <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
         <!-- <button class="btn btn-primary" type="button"  data-dismiss="modal" disabled>Selesai</button> -->
@@ -373,8 +312,7 @@
   <script src="{{ asset('srcFront/js/demo/datatables-demo.js')}}"></script>
   
   <!-- OWL JS -->
-  <script src="{{ asset('vendor/owl/js/owl.carousel.min.js')}}"></script>
-
+  <script src="vendor/owl/js/owl.carousel.min.js"></script>
   @yield('addScript')
 
 </body>
