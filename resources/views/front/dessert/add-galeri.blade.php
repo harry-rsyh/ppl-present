@@ -1,8 +1,3 @@
-@section('customCss')
-  <!-- MDBootstrap Spinner Css -->
-  <link rel="stylesheet" href="{{ asset('css/mdbSpinner.css')}}">
-@endsection
-
 <!-- Modal -->
 <div class="modal fade" id="modalGaleri" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -50,8 +45,3 @@
     </div>
   </div>
 </div>
-
-@section('addScript')
-  <!-- MDBootstrap PRO -->
-  <script src="{{ asset('vendor/MDBootstrap-PRO/css')}}"></script>
-@endsection

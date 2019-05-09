@@ -30,6 +30,10 @@
 @endsection
 
 @section('addScript')
+
+<!--MDBootstrap PRO --> -->
+<script src="{{ asset('vendor/MDBootstrap-PRO/css')}}"></script>
+
 <script>
     $(function(){
        $("#fMinuman").addClass("active");
