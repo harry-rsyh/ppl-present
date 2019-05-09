@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TableMenuLabel extends Migration
+class TableUserMakanan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class TableMenuLabel extends Migration
      */
     public function up()
     {
-        Schema::create('menulabel', function (Blueprint $table) {
-            $table->increments('id_menuLabel');
+        Schema::create('User_Makanan', function(Blueprint $table){
+            $table->increments('id_UserMakanan');    
+            $table->string('foto');
+            $table->string('menu');
             $table->string('label');
-            $table->timestamps();
-        });
+            $table->string('harga');      
+            $table->timestamps();       
+         });
     }
 
     /**
@@ -27,6 +30,6 @@ class TableMenuLabel extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menulabel');
+        Schema::drop('User_Makanan');
     }
 }

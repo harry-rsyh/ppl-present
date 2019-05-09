@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TableHistoryList extends Migration
+class UserHistoryPesanan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class TableHistoryList extends Migration
      */
     public function up()
     {
-        Schema::create('historylist', function (Blueprint $table) {
-            $table->increments('id_historyList');
-            $table->integer('history_id');
-            $table->integer('menu_id');
-            $table->integer('jumlah');
+        Schema::create('User_HistoryPesanan', function(Blueprint $table){
+            $table->increments('id_HistoryPesanan');   
+            $table->integer('id_History');    
+            $table->string('menu');
             $table->text('note');
-            $table->double('total', 8, 2);
             $table->integer('status');
-            $table->timestamps();
+            $table->integer('jumlah');
+            $table->double('total');     
+            $table->timestamps();       
         });
     }
 
@@ -32,6 +32,6 @@ class TableHistoryList extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('historylist');
+        Schema::drop('User_HistoryPesanan');
     }
 }
