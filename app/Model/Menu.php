@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Model\User;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class History extends Model
+class Menu extends Model
 {
     //
 }

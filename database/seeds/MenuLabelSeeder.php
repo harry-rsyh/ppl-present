@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class UserMinumanSeeder extends Seeder
+class MenuLabelSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class UserMinumanSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Model\UserMinuman::class, 6)->create();
+        //
     }
 }

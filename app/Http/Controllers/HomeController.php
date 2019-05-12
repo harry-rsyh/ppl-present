@@ -3,11 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Auth;
-
-use App\Model\UserMakanan;
-use App\Model\UserMinuman;
-use App\Model\UserDessert;
 
 class HomeController extends Controller
 {
@@ -28,15 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(Auth::user()->level == 2){
-            return view('kasir.pembayaran.index');
-        }
-        else if(Auth::user()->level == 4){
-            $data['Makanan'] = UserMakanan::get();
-            return view('front.makanan.index',$data);
-        } 
-        else{
-            return view('home');
-        }
+        return view('home');
     }
 }

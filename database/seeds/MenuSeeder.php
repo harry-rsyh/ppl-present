@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class UserDessertSeeder extends Seeder
+class MenuSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,6 @@ class UserDessertSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Model\UserDessert::class, 6)->create();
+        //
     }
 }
