@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->increments('id_users');
             $table->string('username',100)->unique();
             $table->string('password');
-            $table->integer('level');
+            $table->integer('level')->nullable();
             $table->integer('meja')->nullable();
             $table->rememberToken();
             $table->timestamps();

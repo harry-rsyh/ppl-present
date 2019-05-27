@@ -5,7 +5,7 @@
     
     @include('front.dessert.add-galeri')
     
-    @foreach($Dessert as $dessert)
+    @foreach($Makanan as $dessert)
     <!-- Kotak -->
     <div class="col-lg-3 col-md-4" role="button" data-toggle="modal" data-target="#modalGaleri">
         <div class="card mb-4 py-2 border-left-primary">

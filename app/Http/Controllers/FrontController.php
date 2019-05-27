@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\UserMakanan;
-use App\Model\UserMinuman;
-use App\Model\UserDessert;
+use App\Model\Menu;
 
 class FrontController extends Controller
 {
@@ -14,17 +12,17 @@ class FrontController extends Controller
     }
 
     public function makanan(){
-        $data['Makanan'] = UserMakanan::get();
+        $data['Makanan'] = Menu::where('labelmenu_id','=',1)->get();
         return view('front.makanan.index',$data);
     }
 
     public function minuman(){
-        $data['Minuman'] = UserMinuman::get();
+        $data['Makanan'] = Menu::where('labelmenu_id','=',2)->get();
         return view('front.minuman.index',$data);
     }
 
     public function dessert(){
-        $data['Dessert'] = UserDessert::get();
+        $data['Makanan'] = Menu::where('labelmenu_id','=',3)->get();
         return view('front.dessert.index',$data);
     }
 
